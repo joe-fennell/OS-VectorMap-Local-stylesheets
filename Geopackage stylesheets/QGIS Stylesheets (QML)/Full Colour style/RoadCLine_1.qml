@@ -4,28 +4,16 @@
     <edittype widgetv2type="TextEdit" name="fid">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="featureID">
+    <edittype widgetv2type="TextEdit" name="Fid">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="featureCode">
+    <edittype widgetv2type="TextEdit" name="FeatCode">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="featureDescription">
+    <edittype widgetv2type="TextEdit" name="FeatDesc">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
     <edittype widgetv2type="TextEdit" name="roadName">
-      <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="drawLevel">
-      <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="override">
-      <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suppressed">
-      <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="inTunnel">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
     <edittype widgetv2type="TextEdit" name="roadNumber">
@@ -33,116 +21,24 @@
     </edittype>
   </edittypes>
   <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+
+
     <rules key="{59cad522-c00a-413c-9cec-eb321f08369b}">
-      <rule filter="&quot;drawLevel&quot; = 0 AND  &quot;inTunnel&quot;  = 0" key="{cd0525e6-0183-4f0c-b8ee-2d0a5f8c7e73}" symbol="0" label="Level 0 casing">
-        <rule filter=" &quot;featureDescription&quot;  =  'Motorway, Alignment' " key="{405f8f71-575a-4cfa-95ec-fc1023e33be1}" symbol="1" label="Motorway"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Primary, Alignment' " key="{f12c4233-90b7-474e-a1bc-efbd501f25dd}" symbol="2" label="Primary road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Primary And Trunk, Alignment' " key="{8429b04b-a658-4724-9976-a10ec6534a58}" symbol="3" label="Primary trunk road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Alignment' " key="{17831cef-4f97-4050-a2d1-7fbd13edf22e}" symbol="4" label="A road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Trunk, Alignment' " key="{3ccff0de-263b-41e6-81b9-275683ce6935}" symbol="5" label="A road trunk road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'B Road, Primary, Alignment' " key="{c4d38a2e-584d-4a20-85a2-f182e56a3817}" symbol="6" label="B road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'B Road, Alignment' " key="{8c719dbb-bfb3-4ee3-bc31-29bf44c830e8}" symbol="7" label="B road"/>
-        <rule filter=" &quot;featureDescription&quot;  =   'Minor Road, Alignment' " key="{040a550a-5a4c-4086-891f-8251e9161f4e}" symbol="8" label="Minor road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Road, Alignment' " key="{fa0350db-b2c4-4506-835a-326c1c408010}" symbol="9" label="Local road"/>
-        <rule filter=" &quot;featureDescription&quot;  = 'Secondary Access Road, Alignment'" key="{085f662f-e23a-4549-b64d-c73fbed56927}" symbol="10" label="Secondary access road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Access Road, Alignment' " key="{36378dd8-1506-412a-b970-3006cdb35ae6}" symbol="11" label="Local access road"/>
-        <rule filter=" &quot;featureDescription&quot;  = 'Restricted Local Access Road, Alignment'" key="{04c11083-7e38-4903-b707-67c90083c04a}" symbol="12" label="Restricted local access road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Road, Shared Use Carriageway, Alignment' " key="{0f0e83e7-5a1a-4e1c-8f4e-69c8c67b6907}" symbol="13" label="Local road, shared use"/>
-        <rule filter=" &quot;featureDescription&quot;  =   'Restricted Local Access Road, Guided Busway, Alignment' " key="{2f7fe5a2-2315-4d64-9367-7f3e7afc41b5}" symbol="14" label="Restricted local access road, Guided Busway"/>
-        <rule checkstate="0" filter=" &quot;featureDescription&quot;  =  'Enclosed Traffic Area, Alignment' " key="{fb473fbb-2070-4b23-8c3f-d316fdecf85a}" symbol="15" label="Enclosed traffic area"/>
-      </rule>
-      <rule filter=" &quot;drawLevel&quot;  = 0 AND  &quot;inTunnel&quot;  = 0" key="{17a0345c-310d-4cc5-9a09-7e070946cd79}" symbol="16" label="Level 0 fill">
-        <rule filter=" &quot;featureDescription&quot;  =  'Motorway, Alignment' " key="{1d8c711a-3ff3-4f7c-846d-19b7309ac433}" symbol="17" label="Motorway"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Primary, Alignment' " key="{493987ef-4ce2-4049-8908-d305c55975e7}" symbol="18" label="Primary road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Primary And Trunk, Alignment' " key="{7a773e73-1b4c-4fce-acaa-be0e57f0e19e}" symbol="19" label="Primary trunk road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Alignment' " key="{9092fcbd-2b5d-4bac-a708-4fd973fd2427}" symbol="20" label="A road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Trunk, Alignment' " key="{0d6a69f5-650f-494a-b6f3-f7abe78d6d1c}" symbol="21" label="A road trunk road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'B Road, Primary, Alignment' " key="{251efc48-f3fc-40aa-86b5-e5257fdad860}" symbol="22" label="B road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'B Road, Alignment' " key="{dc11f061-ff58-4d4e-9ba9-d42def9e4fc7}" symbol="23" label="B road"/>
-        <rule filter=" &quot;featureDescription&quot;  =   'Minor Road, Alignment' " key="{9eaa07f3-b2c9-4b05-a999-976976ec0463}" symbol="24" label="Minor road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Road, Alignment' " key="{77c2556c-6504-49ec-b1e4-1a56e890913e}" symbol="25" label="Local road"/>
-        <rule filter=" &quot;featureDescription&quot;  = 'Secondary Access Road, Alignment'" key="{5d8e15c3-13ee-4c68-9d23-7e73a438056f}" symbol="26" label="Secondary access road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Access Road, Alignment' " key="{4ca6437e-0f90-4250-a3b7-787ea564e436}" symbol="27" label="Local access road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Restricted Local Access Road, Alignment' " key="{ab1b13e7-0f36-4041-bb85-947199abc0d9}" symbol="28" label="Restricted local access road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Road, Shared Use Carriageway, Alignment' " key="{7789b06a-0c87-47aa-96cf-e1b6def05aca}" symbol="29" label="Local road, shared use"/>
-        <rule filter=" &quot;featureDescription&quot;  =   'Restricted Local Access Road, Guided Busway, Alignment' " key="{331da05d-35e4-4174-873f-e336509068a7}" symbol="30" label="Restricted local access road, Guided Busway"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Enclosed Traffic Area, Alignment' " key="{829e63b8-8ed0-4096-9cf1-a3e646310b34}" symbol="31" label="Enclosed traffic area"/>
-      </rule>
-      <rule filter="&quot;drawLevel&quot; = 1 AND  &quot;inTunnel&quot;  = 0" key="{5bac1bee-c6e4-4ec9-ab50-4a83a083a073}" symbol="32" label="Level 1 casing">
-        <rule filter=" &quot;featureDescription&quot;  =  'Motorway, Alignment' " key="{3d09a8f9-850f-4822-ab08-c85cf9da1841}" symbol="33" label="Motorway"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Primary, Alignment' " key="{681ab2cf-5238-4903-a489-1596ea9db0a4}" symbol="34" label="Primary road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Primary And Trunk, Alignment' " key="{3d7781d5-f1b1-4612-aa45-3f86055942f7}" symbol="35" label="Primary trunk road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Alignment' " key="{5216fc17-015a-45cc-83db-d2117ed61630}" symbol="36" label="A road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Trunk, Alignment' " key="{cfb6dabf-35bd-4181-89c9-652f974341d1}" symbol="37" label="A road trunk road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'B Road, Primary, Alignment' " key="{69ace7c1-29b2-4954-b36a-e975b2db128a}" symbol="38" label="B road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'B Road, Alignment' " key="{d50e3e27-4f69-4be5-83e5-590137b9b975}" symbol="39" label="B road"/>
-        <rule filter=" &quot;featureDescription&quot;  =   'Minor Road, Alignment' " key="{7e92929d-d86b-4bed-8ae7-a037af5244e6}" symbol="40" label="Minor road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Road, Alignment' " key="{a7dcdc99-b44e-4b18-8ff5-58f7badf019e}" symbol="41" label="Local road"/>
-        <rule filter=" &quot;featureDescription&quot;  = 'Secondary Access Road, Alignment'" key="{bb154bd9-9a41-4ef0-a481-fd697dd93e43}" symbol="42" label="Secondary access road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Access Road, Alignment' " key="{c7ca796c-bf10-4953-bbcb-276ab9827887}" symbol="43" label="Local access road"/>
-        <rule filter=" &quot;featureDescription&quot;  = 'Restricted Local Access Road, Alignment'" key="{aac90a8f-dec4-4b3a-900f-01e92e39b080}" symbol="44" label="Restricted local access road "/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Road, Shared Use Carriageway, Alignment' " key="{133c805a-b794-4724-9cd2-621dd7d36916}" symbol="45" label="Local road, shared use"/>
-        <rule filter=" &quot;featureDescription&quot;  =   'Restricted Local Access Road, Guided Busway, Alignment' " key="{63247f6b-fff4-4312-9293-e4d23df5a12d}" symbol="46" label="Restricted local access road, Guided Busway"/>
-        <rule checkstate="0" filter=" &quot;featureDescription&quot;  =  'Enclosed Traffic Area, Alignment' " key="{5b2ee3e1-e47d-44bf-8525-873c90df0961}" symbol="47" label="Enclosed traffic area"/>
-      </rule>
-      <rule filter="&quot;drawLevel&quot; = 1 AND  &quot;inTunnel&quot;  = 0" key="{4f9d483d-97d2-4b92-bda1-8700b950a7f4}" symbol="48" label="Level 1 fill">
-        <rule filter=" &quot;featureDescription&quot;  =  'Motorway, Alignment' " key="{58dc5e9d-fd00-44e6-8981-7cd38f4d90df}" symbol="49" label="Motorway"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Primary, Alignment' " key="{a85e8804-8536-4412-8494-7df3236978f8}" symbol="50" label="Primary road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Primary And Trunk, Alignment' " key="{4e9ed3e2-f1a5-4215-9c87-ad5516f544f3}" symbol="51" label="Primary trunk road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Alignment' " key="{a8803790-19c0-4d81-b2b7-0fe8904b216d}" symbol="52" label="A road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Trunk, Alignment' " key="{c1a4370f-7c69-4320-a599-70ea173718a6}" symbol="53" label="A road trunk road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'B Road, Primary, Alignment' " key="{94eb2faa-2192-412f-835f-9ef75dfe2259}" symbol="54" label="B road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'B Road, Alignment' " key="{e0107a43-d75b-4d83-a368-b0c11acb7ede}" symbol="55" label="B road"/>
-        <rule filter=" &quot;featureDescription&quot;  =   'Minor Road, Alignment' " key="{09083711-1083-4335-86cd-1dd1fd5408fc}" symbol="56" label="Minor road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Road, Alignment' " key="{99303ef9-f99d-4bf0-a669-1869d75b953f}" symbol="57" label="Local road"/>
-        <rule filter=" &quot;featureDescription&quot;  = 'Secondary Access Road, Alignment'" key="{7081d6ec-9cfc-48e6-bfb0-136b00ed2348}" symbol="58" label="Secondary access road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Access Road, Alignment' " key="{7ee383d1-96e3-4596-a753-2ce9f1ea951f}" symbol="59" label="Local access road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Restricted Local Access Road, Alignment' " key="{2f86507d-a8e8-4495-bea2-e226ae1bcca9}" symbol="60" label="Restricted local access road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Road, Shared Use Carriageway, Alignment' " key="{d02dbba3-b4bf-4181-bbf1-a85fe819ea73}" symbol="61" label="Local road, shared use"/>
-        <rule filter=" &quot;featureDescription&quot;  =   'Restricted Local Access Road, Guided Busway, Alignment' " key="{46dfeda0-6469-475f-8385-0bf75546596a}" symbol="62" label="Restricted local access road, Guided Busway"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Enclosed Traffic Area, Alignment' " key="{1995c5bb-476c-452d-9538-1bb1459a1ebc}" symbol="63" label="Enclosed traffic area"/>
-      </rule>
-      <rule filter="&quot;drawLevel&quot; = 2 AND  &quot;inTunnel&quot;  = 0" key="{7a23bf7a-fb88-4522-b0e3-6a14704e9bfc}" symbol="64" label="Level 2 casing">
-        <rule filter=" &quot;featureDescription&quot;  =  'Motorway, Alignment' " key="{11c867a9-76e0-4efe-aa16-8cfd158b82ca}" symbol="65" label="Motorway"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Primary, Alignment' " key="{f22338e4-9621-477e-90c9-574364216f79}" symbol="66" label="Primary road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Primary And Trunk, Alignment' " key="{d542f2c6-cda3-4d79-82e4-4aed3731eaff}" symbol="67" label="Primary trunk road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Alignment' " key="{686d6cc4-93f9-4381-9d7f-7bc2b5783b2a}" symbol="68" label="A road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Trunk, Alignment' " key="{8db7a394-9290-40f7-b806-f98d9fa0003a}" symbol="69" label="A road trunk road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'B Road, Primary, Alignment' " key="{414c837c-d53a-4346-9460-a6b30ca709fc}" symbol="70" label="B road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'B Road, Alignment' " key="{2c04b7bb-1484-4b0e-8159-abc7905caab3}" symbol="71" label="B road"/>
-        <rule filter=" &quot;featureDescription&quot;  =   'Minor Road, Alignment' " key="{dedc257f-d542-41f3-909f-36a0f8d29ee4}" symbol="72" label="Minor road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Road, Alignment' " key="{458b5424-a6ee-48e8-bfc3-791f140b4b41}" symbol="73" label="Local road"/>
-        <rule filter=" &quot;featureDescription&quot;  = 'Secondary Access Road, Alignment'" key="{d8cd0e60-f290-4579-b5f8-cb286f2bef13}" symbol="74" label="Secondary access road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Access Road, Alignment' " key="{e5759aa1-8c87-4312-bfcc-66c87f1d68bd}" symbol="75" label="Local access road"/>
-        <rule filter=" &quot;featureDescription&quot;  = 'Restricted Local Access Road, Alignment'" key="{849ec613-20a7-4b1f-b181-f9f260771e09}" symbol="76" label="Restricted local access road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Road, Shared Use Carriageway, Alignment' " key="{0bbe23e2-9ceb-4815-b77e-035697763326}" symbol="77" label="Local road, shared use"/>
-        <rule filter=" &quot;featureDescription&quot;  =   'Restricted Local Access Road, Guided Busway, Alignment' " key="{fcf236ac-6d39-4ab1-aba2-eb0bdd6317ba}" symbol="78" label="Restricted local access road, Guided Busway"/>
-        <rule checkstate="0" filter=" &quot;featureDescription&quot;  =  'Enclosed Traffic Area, Alignment' " key="{fcdabefe-56b1-413b-84bb-d30c134dc3e2}" symbol="79" label="Enclosed traffic area"/>
-      </rule>
-      <rule filter="&quot;drawLevel&quot; = 2 AND  &quot;inTunnel&quot;  = 0" key="{b485f8d8-55c7-4b77-a1e4-ecb1a6d0a0f5}" symbol="80" label="Level 2 fill">
-        <rule filter=" &quot;featureDescription&quot;  =  'Motorway, Alignment' " key="{0a8885c5-fe5d-433c-8ff0-52d0bc617e09}" symbol="81" label="Motorway"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Primary, Alignment' " key="{49e56a65-8d31-4d7d-9462-2eac72414e8f}" symbol="82" label="Primary road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Primary And Trunk, Alignment' " key="{2059109b-8004-4042-a098-ae4a6a112eb0}" symbol="83" label="Primary trunk road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Alignment' " key="{3d7b2f4d-830a-4ef4-883e-253232552c9a}" symbol="84" label="A road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'A Road, Trunk, Alignment' " key="{0f81e2d9-f1b9-496a-8880-c2c8d4468912}" symbol="85" label="A road trunk road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'B Road, Primary, Alignment' " key="{d4c0246c-2f7f-45c9-bdd4-fbc1e4ebe9b0}" symbol="86" label="B road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'B Road, Alignment' " key="{4f0209fc-9d34-479d-a7c5-2722575eca83}" symbol="87" label="B road"/>
-        <rule filter=" &quot;featureDescription&quot;  =   'Minor Road, Alignment' " key="{07680b67-5c7c-4b61-9b73-3a9a3c323888}" symbol="88" label="Minor road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Road, Alignment' " key="{e469d0c0-a474-49fa-8327-58a628b62a5d}" symbol="89" label="Local road"/>
-        <rule filter=" &quot;featureDescription&quot;  = 'Secondary Access Road, Alignment'" key="{fcdf8510-fd0d-4b01-9309-cd5ffc8dd340}" symbol="90" label="Secondary access road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Access Road, Alignment' " key="{283f615d-de86-4c5f-a408-baed281a5b0f}" symbol="91" label="Local access road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Restricted Local Access Road, Alignment' " key="{8895787f-d72b-48ec-a611-7c894142ed95}" symbol="92" label="Restricted local access road"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Local Road, Shared Use Carriageway, Alignment' " key="{7296a73c-f8ec-4139-b9a8-5aceae888ab1}" symbol="93" label="Local road, shared use"/>
-        <rule filter=" &quot;featureDescription&quot;  =   'Restricted Local Access Road, Guided Busway, Alignment' " key="{2dada3ea-d19c-4d4a-a300-24c9641ea45c}" symbol="94" label="Restricted local access road, Guided Busway"/>
-        <rule filter=" &quot;featureDescription&quot;  =  'Enclosed Traffic Area, Alignment' " key="{123ff5fd-cc03-41e7-97c7-6f21543a6a41}" symbol="95" label="Enclosed traffic area"/>
-      </rule>
-      <rule filter="&quot;drawLevel&quot; = 3 AND  &quot;inTunnel&quot;  = 0" key="{53c3f4cf-5613-463f-a32b-97f7e4b1617c}" symbol="96" label="Level 3 casing">
-        <rule filter=" &quot;featureDescription&quot;  =  'Motorway, Alignment' " key="{851e99c1-e5f4-4372-8aac-9dde7655f273}" symbol="97" label="Motorway"/>
-      </rule>
-      <rule filter="&quot;drawLevel&quot; = 3 AND  &quot;inTunnel&quot;  = 0" key="{6d1bf295-62a7-4242-b199-898572bea586}" symbol="98" label="Level 3 fill">
-        <rule filter=" &quot;featureDescription&quot;  =  'Motorway, Alignment' " key="{3c12091b-4c59-4edd-8332-084f37aff347}" symbol="99" label="Motorway"/>
-      </rule>
-      <rule filter="&quot;inTunnel&quot; = 1" key="{142d08ed-6de1-45e6-b760-b008d1f5d7b8}" symbol="100" label="Road tunnels"/>
+    <rule filter=" &quot;FeatDesc&quot;  =  'Motorway, Alignment' " key="{0a8885c5-fe5d-433c-8ff0-52d0bc617e09}" symbol="81" label="Motorway"/>
+    <rule filter=" &quot;FeatDesc&quot;  =  'A Road, Primary, Alignment' " key="{49e56a65-8d31-4d7d-9462-2eac72414e8f}" symbol="82" label="Primary road"/>
+    <rule filter=" &quot;FeatDesc&quot;  =  'A Road, Primary And Trunk, Alignment' " key="{2059109b-8004-4042-a098-ae4a6a112eb0}" symbol="83" label="Primary trunk road"/>
+    <rule filter=" &quot;FeatDesc&quot;  =  'A Road, Alignment' " key="{3d7b2f4d-830a-4ef4-883e-253232552c9a}" symbol="84" label="A road"/>
+    <rule filter=" &quot;FeatDesc&quot;  =  'A Road, Trunk, Alignment' " key="{0f81e2d9-f1b9-496a-8880-c2c8d4468912}" symbol="85" label="A road trunk road"/>
+    <rule filter=" &quot;FeatDesc&quot;  =  'B Road, Primary, Alignment' " key="{d4c0246c-2f7f-45c9-bdd4-fbc1e4ebe9b0}" symbol="86" label="B road"/>
+    <rule filter=" &quot;FeatDesc&quot;  =  'B Road, Alignment' " key="{4f0209fc-9d34-479d-a7c5-2722575eca83}" symbol="87" label="B road"/>
+    <rule filter=" &quot;FeatDesc&quot;  =   'Minor Road, Alignment' " key="{07680b67-5c7c-4b61-9b73-3a9a3c323888}" symbol="88" label="Minor road"/>
+    <rule filter=" &quot;FeatDesc&quot;  =  'Local Road, Alignment' " key="{e469d0c0-a474-49fa-8327-58a628b62a5d}" symbol="89" label="Local road"/>
+    <rule filter=" &quot;FeatDesc&quot;  = 'Secondary Access Road, Alignment'" key="{fcdf8510-fd0d-4b01-9309-cd5ffc8dd340}" symbol="90" label="Secondary access road"/>
+    <rule filter=" &quot;FeatDesc&quot;  =  'Local Access Road, Alignment' " key="{283f615d-de86-4c5f-a408-baed281a5b0f}" symbol="91" label="Local access road"/>
+    <rule filter=" &quot;FeatDesc&quot;  =  'Restricted Local Access Road, Alignment' " key="{8895787f-d72b-48ec-a611-7c894142ed95}" symbol="92" label="Restricted local access road"/>
+    <rule filter=" &quot;FeatDesc&quot;  =  'Local Road, Shared Use Carriageway, Alignment' " key="{7296a73c-f8ec-4139-b9a8-5aceae888ab1}" symbol="93" label="Local road, shared use"/>
+    <rule filter=" &quot;FeatDesc&quot;  =   'Restricted Local Access Road, Guided Busway, Alignment' " key="{2dada3ea-d19c-4d4a-a300-24c9641ea45c}" symbol="94" label="Restricted local access road, Guided Busway"/>
+    <rule filter=" &quot;FeatDesc&quot;  =  'Enclosed Traffic Area, Alignment' " key="{123ff5fd-cc03-41e7-97c7-6f21543a6a41}" symbol="95" label="Enclosed traffic area"/>
     </rules>
     <symbols>
       <symbol alpha="1" clip_to_extent="1" type="line" name="0">
@@ -2157,10 +2053,10 @@
     <property key="labeling/bufferTransp" value="30"/>
     <property key="labeling/centroidInside" value="false"/>
     <property key="labeling/centroidWhole" value="false"/>
-    <property key="labeling/dataDefined/Color" value="1~~1~~CASE WHEN  &quot;featureDescription&quot; =   'A Road, alignment' THEN  color_rgb( 212, 106, 141) WHEN &quot;featureDescription&quot;  =  'B Road, alignment' THEN  color_rgb( 212, 158, 144) WHEN &quot;featureDescription&quot;  =  'Motorway, alignment' THEN  color_rgb( 54, 177, 201) WHEN &quot;featureDescription&quot;  =  'Primary Road, alignment'   THEN  color_rgb( 120, 179, 127)  ELSE  color_rgb( 115, 113, 113) END~~"/>
-    <property key="labeling/dataDefined/FontLetterSpacing" value="1~~1~~CASE WHEN  &quot;featureDescription&quot; =   'A Road, alignment' OR &quot;featureDescription&quot;  =  'B Road, alignment' OR &quot;featureDescription&quot;  =  'Motorway, alignment' OR &quot;featureDescription&quot;  =  'Primary Road, alignment'   THEN  '2'  WHEN  &quot;featureDescription&quot;  =  'Minor Road, alignment' THEN '1' ELSE  '0' END~~"/>
-    <property key="labeling/dataDefined/FontStyle" value="1~~1~~CASE WHEN  &quot;featureDescription&quot; =   'A Road, alignment' OR &quot;featureDescription&quot;  =  'B Road, alignment' OR &quot;featureDescription&quot;  =  'Motorway, alignment' OR &quot;featureDescription&quot;  =  'Primary Road, alignment'   THEN  'Bold'  ELSE  'Normal' END~~"/>
-    <property key="labeling/dataDefined/Size" value="1~~1~~CASE WHEN  &quot;featureDescription&quot; =   'A Road, alignment' OR &quot;featureDescription&quot;  =  'B Road, alignment' OR &quot;featureDescription&quot;  =  'Motorway, alignment' OR &quot;featureDescription&quot;  =  'Primary Road, alignment'   THEN  '21'  WHEN  &quot;featureDescription&quot;  =  'Minor Road, alignment' THEN '18' ELSE  '16' END~~"/>
+    <property key="labeling/dataDefined/Color" value="1~~1~~CASE WHEN  &quot;FeatDesc&quot; =   'A Road, alignment' THEN  color_rgb( 212, 106, 141) WHEN &quot;FeatDesc&quot;  =  'B Road, alignment' THEN  color_rgb( 212, 158, 144) WHEN &quot;FeatDesc&quot;  =  'Motorway, alignment' THEN  color_rgb( 54, 177, 201) WHEN &quot;FeatDesc&quot;  =  'Primary Road, alignment'   THEN  color_rgb( 120, 179, 127)  ELSE  color_rgb( 115, 113, 113) END~~"/>
+    <property key="labeling/dataDefined/FontLetterSpacing" value="1~~1~~CASE WHEN  &quot;FeatDesc&quot; =   'A Road, alignment' OR &quot;FeatDesc&quot;  =  'B Road, alignment' OR &quot;FeatDesc&quot;  =  'Motorway, alignment' OR &quot;FeatDesc&quot;  =  'Primary Road, alignment'   THEN  '2'  WHEN  &quot;FeatDesc&quot;  =  'Minor Road, alignment' THEN '1' ELSE  '0' END~~"/>
+    <property key="labeling/dataDefined/FontStyle" value="1~~1~~CASE WHEN  &quot;FeatDesc&quot; =   'A Road, alignment' OR &quot;FeatDesc&quot;  =  'B Road, alignment' OR &quot;FeatDesc&quot;  =  'Motorway, alignment' OR &quot;FeatDesc&quot;  =  'Primary Road, alignment'   THEN  'Bold'  ELSE  'Normal' END~~"/>
+    <property key="labeling/dataDefined/Size" value="1~~1~~CASE WHEN  &quot;FeatDesc&quot; =   'A Road, alignment' OR &quot;FeatDesc&quot;  =  'B Road, alignment' OR &quot;FeatDesc&quot;  =  'Motorway, alignment' OR &quot;FeatDesc&quot;  =  'Primary Road, alignment'   THEN  '21'  WHEN  &quot;FeatDesc&quot;  =  'Minor Road, alignment' THEN '18' ELSE  '16' END~~"/>
     <property key="labeling/decimals" value="3"/>
     <property key="labeling/displayAll" value="false"/>
     <property key="labeling/dist" value="0"/>
@@ -2170,7 +2066,7 @@
     <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
     <property key="labeling/drawLabels" value="false"/>
     <property key="labeling/enabled" value="false"/>
-    <property key="labeling/fieldName" value="CASE WHEN roadName  &lt;>  'None' AND  ( &quot;featureDescription&quot; =   'A Road, alignment' OR &quot;featureDescription&quot;  =  'B Road, alignment' OR &quot;featureDescription&quot;  =  'Motorway, alignment' OR &quot;featureDescription&quot;  =  'Primary Road, alignment' )  THEN   concat(  &quot;roadNumber&quot;,  '  ', title( roadName) ) WHEN roadName  &lt;>  'None' AND  (  &quot;featureDescription&quot;  =  'Alleyway, alignment'  OR  &quot;featureDescription&quot;  =  'Local Street, alignment'  OR  &quot;featureDescription&quot;  =  'Minor Road, alignment'  OR  &quot;featureDescription&quot;  =  'Private Road, Public Access, alignment'  OR  &quot;featureDescription&quot;  =  'Private Road, Restricted, alignment'  OR   &quot;featureDescription&quot;  ='Pedestrianised Street, alignment'  ) THEN title( roadName) END"/>
+    <property key="labeling/fieldName" value="CASE WHEN roadName  &lt;>  'None' AND  ( &quot;FeatDesc&quot; =   'A Road, alignment' OR &quot;FeatDesc&quot;  =  'B Road, alignment' OR &quot;FeatDesc&quot;  =  'Motorway, alignment' OR &quot;FeatDesc&quot;  =  'Primary Road, alignment' )  THEN   concat(  &quot;roadNumber&quot;,  '  ', title( roadName) ) WHEN roadName  &lt;>  'None' AND  (  &quot;FeatDesc&quot;  =  'Alleyway, alignment'  OR  &quot;FeatDesc&quot;  =  'Local Street, alignment'  OR  &quot;FeatDesc&quot;  =  'Minor Road, alignment'  OR  &quot;FeatDesc&quot;  =  'Private Road, Public Access, alignment'  OR  &quot;FeatDesc&quot;  =  'Private Road, Restricted, alignment'  OR   &quot;FeatDesc&quot;  ='Pedestrianised Street, alignment'  ) THEN title( roadName) END"/>
     <property key="labeling/fitInPolygonOnly" value="false"/>
     <property key="labeling/fontBold" value="false"/>
     <property key="labeling/fontCapitals" value="0"/>
@@ -2308,7 +2204,7 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerTransparency>0</layerTransparency>
-  <displayfield>featureDescription</displayfield>
+  <displayfield>FeatDesc</displayfield>
   <label>0</label>
   <labelattributes>
     <label fieldname="" text="Label"/>
@@ -2362,31 +2258,24 @@
   <annotationform>P:/Projects/VML_QML</annotationform>
   <aliases>
     <alias field="fid" index="0" name=""/>
-    <alias field="featureID" index="1" name=""/>
-    <alias field="featureCode" index="2" name=""/>
-    <alias field="featureDescription" index="3" name=""/>
+    <alias field="Fid" index="1" name=""/>
+    <alias field="FeatCode" index="2" name=""/>
+    <alias field="FeatDesc" index="3" name=""/>
     <alias field="roadName" index="4" name=""/>
-    <alias field="drawLevel" index="5" name=""/>
-    <alias field="override" index="6" name=""/>
-    <alias field="suppressed" index="7" name=""/>
-    <alias field="inTunnel" index="8" name=""/>
     <alias field="roadNumber" index="9" name=""/>
   </aliases>
   <excludeAttributesWMS/>
   <excludeAttributesWFS/>
   <attributeactions default="-1"/>
-  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;featuredescription&quot;" sortOrder="0">
+  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;FeatDesc&quot;" sortOrder="0">
     <columns>
       <column width="-1" hidden="0" type="field" name="override"/>
       <column width="-1" hidden="1" type="actions"/>
       <column width="-1" hidden="0" type="field" name="fid"/>
-      <column width="-1" hidden="0" type="field" name="featureID"/>
-      <column width="-1" hidden="0" type="field" name="featureCode"/>
-      <column width="-1" hidden="0" type="field" name="featureDescription"/>
+      <column width="-1" hidden="0" type="field" name="Fid"/>
+      <column width="-1" hidden="0" type="field" name="FeatCode"/>
+      <column width="-1" hidden="0" type="field" name="FeatDesc"/>
       <column width="-1" hidden="0" type="field" name="roadName"/>
-      <column width="-1" hidden="0" type="field" name="drawLevel"/>
-      <column width="-1" hidden="0" type="field" name="suppressed"/>
-      <column width="-1" hidden="0" type="field" name="inTunnel"/>
       <column width="-1" hidden="0" type="field" name="roadNumber"/>
     </columns>
   </attributetableconfig>
@@ -2420,16 +2309,12 @@ def my_form_open(dialog, layer, feature):
   </conditionalstyles>
   <defaults>
     <default field="fid" expression=""/>
-    <default field="featureID" expression=""/>
-    <default field="featureCode" expression=""/>
-    <default field="featureDescription" expression=""/>
+    <default field="Fid" expression=""/>
+    <default field="FeatCode" expression=""/>
+    <default field="FeatDesc" expression=""/>
     <default field="roadName" expression=""/>
-    <default field="drawLevel" expression=""/>
-    <default field="override" expression=""/>
-    <default field="suppressed" expression=""/>
-    <default field="inTunnel" expression=""/>
     <default field="roadNumber" expression=""/>
   </defaults>
-  <previewExpression>COALESCE( "featureDescription", '&lt;NULL>' )</previewExpression>
+  <previewExpression>COALESCE( "FeatDesc", '&lt;NULL>' )</previewExpression>
   <layerGeometryType>1</layerGeometryType>
 </qgis>

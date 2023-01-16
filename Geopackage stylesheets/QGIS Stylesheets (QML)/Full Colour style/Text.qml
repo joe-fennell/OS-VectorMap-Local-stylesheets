@@ -7,10 +7,10 @@
     <edittype widgetv2type="TextEdit" name="featureID">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="featureCode">
+    <edittype widgetv2type="TextEdit" name="FeatCode">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="featureDescription">
+    <edittype widgetv2type="TextEdit" name="FeatDesc">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
     <edittype widgetv2type="TextEdit" name="anchorPosition">
@@ -83,12 +83,12 @@
     <property key="labeling/bufferTransp" value="30"/>
     <property key="labeling/centroidInside" value="false"/>
     <property key="labeling/centroidWhole" value="false"/>
-    <property key="labeling/dataDefined/BufferSize" value="1~~1~~CASE WHEN  &quot;featureCode&quot; = 15701 THEN &quot;height&quot; / 4 ELSE &quot;height&quot; / 5 END~~"/>
-    <property key="labeling/dataDefined/BufferTransp" value="1~~1~~CASE WHEN  &quot;featureCode&quot;  =  15409 OR &quot;featureCode&quot;  =  15210 OR &quot;featureCode&quot;  =  15403 THEN 100 WHEN  &quot;featureCode&quot;  =  15112 AND  &quot;height&quot; &lt;= 15 THEN 15 ELSE 30 END~~"/>
-    <property key="labeling/dataDefined/Color" value="1~~1~~CASE WHEN  &quot;featureCode&quot;  =  15404 OR &quot;featureCode&quot;  =  15407  THEN  color_rgb(157, 113, 51) WHEN &quot;featureCode&quot;  =  15403 OR &quot;featureCode&quot;  =  15409 THEN  color_rgba(157, 113, 51, 0) WHEN &quot;featureCode&quot;  =  15210 THEN  color_rgba(26, 26, 26, 0)  WHEN  &quot;featureCode&quot;  =  15603 THEN  color_rgb(0, 154, 207) WHEN  &quot;featureCode&quot;  =  15112 AND  &quot;textString&quot; = 'Drain' THEN  color_rgb(0, 154, 207) WHEN  &quot;featureCode&quot;  =  15015 THEN  color_rgb(72, 64, 60) ELSE  color_rgb(0, 0, 0) END~~"/>
+    <property key="labeling/dataDefined/BufferSize" value="1~~1~~CASE WHEN  &quot;FeatCode&quot; = 15701 THEN &quot;height&quot; / 4 ELSE &quot;height&quot; / 5 END~~"/>
+    <property key="labeling/dataDefined/BufferTransp" value="1~~1~~CASE WHEN  &quot;FeatCode&quot;  =  15409 OR &quot;FeatCode&quot;  =  15210 OR &quot;FeatCode&quot;  =  15403 THEN 100 WHEN  &quot;FeatCode&quot;  =  15112 AND  &quot;height&quot; &lt;= 15 THEN 15 ELSE 30 END~~"/>
+    <property key="labeling/dataDefined/Color" value="1~~1~~CASE WHEN  &quot;FeatCode&quot;  =  15404 OR &quot;FeatCode&quot;  =  15407  THEN  color_rgb(157, 113, 51) WHEN &quot;FeatCode&quot;  =  15403 OR &quot;FeatCode&quot;  =  15409 THEN  color_rgba(157, 113, 51, 0) WHEN &quot;FeatCode&quot;  =  15210 THEN  color_rgba(26, 26, 26, 0)  WHEN  &quot;FeatCode&quot;  =  15603 THEN  color_rgb(0, 154, 207) WHEN  &quot;FeatCode&quot;  =  15112 AND  &quot;textString&quot; = 'Drain' THEN  color_rgb(0, 154, 207) WHEN  &quot;FeatCode&quot;  =  15015 THEN  color_rgb(72, 64, 60) ELSE  color_rgb(0, 0, 0) END~~"/>
     <property key="labeling/dataDefined/Family" value="1~~1~~CASE WHEN  &quot;font&quot;  =  0  OR  &quot;font&quot;  =  2  THEN 'Times New Roman' ELSE 'Arial' END~~"/>
-    <property key="labeling/dataDefined/FontStyle" value="1~~1~~CASE WHEN  &quot;font&quot;  =  0  THEN 'Italic' WHEN &quot;featureCode&quot; = 15015 THEN 'Bold' ELSE 'Normal'END~~"/>
-    <property key="labeling/dataDefined/FontTransp" value="1~~1~~CASE WHEN  &quot;featureCode&quot;  =  15409 OR  &quot;featureCode&quot; = 15210 OR  &quot;featureCode&quot; = 15403 THEN 100 ELSE 0 END~~"/>
+    <property key="labeling/dataDefined/FontStyle" value="1~~1~~CASE WHEN  &quot;font&quot;  =  0  THEN 'Italic' WHEN &quot;FeatCode&quot; = 15015 THEN 'Bold' ELSE 'Normal'END~~"/>
+    <property key="labeling/dataDefined/FontTransp" value="1~~1~~CASE WHEN  &quot;FeatCode&quot;  =  15409 OR  &quot;FeatCode&quot; = 15210 OR  &quot;FeatCode&quot; = 15403 THEN 100 ELSE 0 END~~"/>
     <property key="labeling/dataDefined/Rotation" value="1~~1~~&quot;orientation&quot;  / 10~~orientation"/>
     <property key="labeling/dataDefined/Size" value="1~~1~~&quot;height&quot;/1.1~~height"/>
     <property key="labeling/decimals" value="3"/>
@@ -238,7 +238,7 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerTransparency>0</layerTransparency>
-  <displayfield>featureDescription</displayfield>
+  <displayfield>FeatDesc</displayfield>
   <label>0</label>
   <labelattributes>
     <label fieldname="" text="Label"/>
@@ -293,8 +293,8 @@
   <aliases>
     <alias field="fid" index="0" name=""/>
     <alias field="featureID" index="1" name=""/>
-    <alias field="featureCode" index="2" name=""/>
-    <alias field="featureDescription" index="3" name=""/>
+    <alias field="FeatCode" index="2" name=""/>
+    <alias field="FeatDesc" index="3" name=""/>
     <alias field="anchorPosition" index="4" name=""/>
     <alias field="font" index="5" name=""/>
     <alias field="height" index="6" name=""/>
@@ -314,8 +314,8 @@
       <column width="-1" hidden="1" type="actions"/>
       <column width="-1" hidden="0" type="field" name="fid"/>
       <column width="-1" hidden="0" type="field" name="featureID"/>
-      <column width="-1" hidden="0" type="field" name="featureCode"/>
-      <column width="-1" hidden="0" type="field" name="featureDescription"/>
+      <column width="-1" hidden="0" type="field" name="FeatCode"/>
+      <column width="-1" hidden="0" type="field" name="FeatDesc"/>
       <column width="-1" hidden="0" type="field" name="anchorPosition"/>
       <column width="-1" hidden="0" type="field" name="textString"/>
     </columns>
@@ -351,8 +351,8 @@ def my_form_open(dialog, layer, feature):
   <defaults>
     <default field="fid" expression=""/>
     <default field="featureID" expression=""/>
-    <default field="featureCode" expression=""/>
-    <default field="featureDescription" expression=""/>
+    <default field="FeatCode" expression=""/>
+    <default field="FeatDesc" expression=""/>
     <default field="anchorPosition" expression=""/>
     <default field="font" expression=""/>
     <default field="height" expression=""/>
@@ -360,6 +360,6 @@ def my_form_open(dialog, layer, feature):
     <default field="orientation_uom" expression=""/>
     <default field="textString" expression=""/>
   </defaults>
-  <previewExpression>COALESCE( "featureDescription", '&lt;NULL>' )</previewExpression>
+  <previewExpression>COALESCE( "FeatDesc", '&lt;NULL>' )</previewExpression>
   <layerGeometryType>0</layerGeometryType>
 </qgis>

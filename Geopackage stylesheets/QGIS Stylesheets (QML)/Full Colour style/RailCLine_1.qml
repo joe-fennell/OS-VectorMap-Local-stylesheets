@@ -1,31 +1,24 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
 <qgis version="2.18.14" simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
   <edittypes>
-    <edittype widgetv2type="TextEdit" name="fid">
+    <edittype widgetv2type="TextEdit" name="Fid">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="featureID">
+    <edittype widgetv2type="TextEdit" name="Fid">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="featureCode">
+    <edittype widgetv2type="TextEdit" name="FeatCode">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="featureDescription">
-      <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="suppressed">
-      <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="inTunnel">
+    <edittype widgetv2type="TextEdit" name="FeatDesc">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
   </edittypes>
   <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
     <rules key="{a250d8ea-134b-48e2-88f8-b46a2a200b5c}">
-      <rule filter="&quot;featureCode&quot; = 15301 AND &quot;inTunnel&quot;  = 0" key="{b3ad17b5-0e17-4b59-a058-3bf5b576fdd8}" symbol="0" label="Single track railway or siding"/>
-      <rule filter="&quot;featureCode&quot; = 15302 AND &quot;inTunnel&quot;  = 0" key="{c8e77b2d-d586-4f41-859c-b3b6d1a7223b}" symbol="1" label="Narrow gauge railway"/>
-      <rule filter="&quot;featureCode&quot; = 15300 AND &quot;inTunnel&quot;  = 0" key="{c080ac21-53c8-461b-ab5e-4cda33e15b07}" symbol="2" label="Multi track railway"/>
-      <rule filter="&quot;inTunnel&quot;  = 1" key="{adc5fb1e-d9c8-49cc-88e1-d821f4b598e8}" symbol="3" label="Railway tunnels"/>
+      <rule filter="&quot;FeatCode&quot; = 15301" key="{b3ad17b5-0e17-4b59-a058-3bf5b576fdd8}" symbol="0" label="Single track railway or siding"/>
+      <rule filter="&quot;FeatCode&quot; = 15302" key="{c8e77b2d-d586-4f41-859c-b3b6d1a7223b}" symbol="1" label="Narrow gauge railway"/>
+      <rule filter="&quot;FeatCode&quot; = 15300" key="{c080ac21-53c8-461b-ab5e-4cda33e15b07}" symbol="2" label="Multi track railway"/>
     </rules>
     <symbols>
       <symbol alpha="1" clip_to_extent="1" type="line" name="0">
@@ -293,7 +286,7 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerTransparency>0</layerTransparency>
-  <displayfield>featureDescription</displayfield>
+  <displayfield>FeatDesc</displayfield>
   <label>0</label>
   <labelattributes>
     <label fieldname="" text="Label"/>
@@ -346,25 +339,21 @@
   <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
   <annotationform>P:/Projects/VML_QML</annotationform>
   <aliases>
-    <alias field="fid" index="0" name=""/>
-    <alias field="featureID" index="1" name=""/>
-    <alias field="featureCode" index="2" name=""/>
-    <alias field="featureDescription" index="3" name=""/>
-    <alias field="suppressed" index="4" name=""/>
-    <alias field="inTunnel" index="5" name=""/>
+    <alias field="Fid" index="0" name=""/>
+    <alias field="Fid" index="1" name=""/>
+    <alias field="FeatCode" index="2" name=""/>
+    <alias field="FeatDesc" index="3" name=""/>
   </aliases>
   <excludeAttributesWMS/>
   <excludeAttributesWFS/>
   <attributeactions default="-1"/>
-  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;featuredescription&quot;" sortOrder="0">
+  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;FeatDesc&quot;" sortOrder="0">
     <columns>
-      <column width="-1" hidden="0" type="field" name="suppressed"/>
       <column width="-1" hidden="1" type="actions"/>
-      <column width="-1" hidden="0" type="field" name="fid"/>
-      <column width="-1" hidden="0" type="field" name="featureID"/>
-      <column width="-1" hidden="0" type="field" name="featureCode"/>
-      <column width="-1" hidden="0" type="field" name="featureDescription"/>
-      <column width="-1" hidden="0" type="field" name="inTunnel"/>
+      <column width="-1" hidden="0" type="field" name="Fid"/>
+      <column width="-1" hidden="0" type="field" name="Fid"/>
+      <column width="-1" hidden="0" type="field" name="FeatCode"/>
+      <column width="-1" hidden="0" type="field" name="FeatDesc"/>
     </columns>
   </attributetableconfig>
   <editform>P:/Projects/VML_QML</editform>
@@ -396,13 +385,11 @@ def my_form_open(dialog, layer, feature):
     <fieldstyles/>
   </conditionalstyles>
   <defaults>
-    <default field="fid" expression=""/>
-    <default field="featureID" expression=""/>
-    <default field="featureCode" expression=""/>
-    <default field="featureDescription" expression=""/>
-    <default field="suppressed" expression=""/>
-    <default field="inTunnel" expression=""/>
+    <default field="Fid" expression=""/>
+    <default field="Fid" expression=""/>
+    <default field="FeatCode" expression=""/>
+    <default field="FeatDesc" expression=""/>
   </defaults>
-  <previewExpression>COALESCE( "featureDescription", '&lt;NULL>' )</previewExpression>
+  <previewExpression>COALESCE( "FeatDesc", '&lt;NULL>' )</previewExpression>
   <layerGeometryType>1</layerGeometryType>
 </qgis>

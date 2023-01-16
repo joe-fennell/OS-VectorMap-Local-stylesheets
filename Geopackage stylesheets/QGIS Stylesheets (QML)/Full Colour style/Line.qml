@@ -1,20 +1,20 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
 <qgis version="2.18.14" simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
   <edittypes>
-    <edittype widgetv2type="TextEdit" name="fid">
+    <edittype widgetv2type="TextEdit" name="Fid">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
     <edittype widgetv2type="TextEdit" name="featureID">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="featureCode">
+    <edittype widgetv2type="TextEdit" name="FeatCode">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
-    <edittype widgetv2type="TextEdit" name="featureDescription">
+    <edittype widgetv2type="TextEdit" name="FeatDesc">
       <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
     </edittype>
   </edittypes>
-  <renderer-v2 attr="featureCode" forceraster="0" symbollevels="1" type="categorizedSymbol" enableorderby="0">
+  <renderer-v2 attr="FeatCode" forceraster="0" symbollevels="1" type="categorizedSymbol" enableorderby="0">
     <categories>
       <category render="true" symbol="0" value="15010" label="Building outline"/>
       <category render="true" symbol="1" value="15011" label="Important building outline"/>
@@ -822,7 +822,7 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerTransparency>0</layerTransparency>
-  <displayfield>featureDescription</displayfield>
+  <displayfield>FeatDesc</displayfield>
   <label>0</label>
   <labelattributes>
     <label fieldname="" text="Label"/>
@@ -875,10 +875,10 @@
   <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
   <annotationform>P:/Projects/VML_QML</annotationform>
   <aliases>
-    <alias field="fid" index="0" name=""/>
+    <alias field="Fid" index="0" name=""/>
     <alias field="featureID" index="1" name=""/>
-    <alias field="featureCode" index="2" name=""/>
-    <alias field="featureDescription" index="3" name=""/>
+    <alias field="FeatCode" index="2" name=""/>
+    <alias field="FeatDesc" index="3" name=""/>
   </aliases>
   <excludeAttributesWMS/>
   <excludeAttributesWFS/>
@@ -886,10 +886,10 @@
   <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;gml_id&quot;" sortOrder="0">
     <columns>
       <column width="-1" hidden="1" type="actions"/>
-      <column width="-1" hidden="0" type="field" name="fid"/>
+      <column width="-1" hidden="0" type="field" name="Fid"/>
       <column width="-1" hidden="0" type="field" name="featureID"/>
-      <column width="-1" hidden="0" type="field" name="featureCode"/>
-      <column width="-1" hidden="0" type="field" name="featureDescription"/>
+      <column width="-1" hidden="0" type="field" name="FeatCode"/>
+      <column width="-1" hidden="0" type="field" name="FeatDesc"/>
     </columns>
   </attributetableconfig>
   <editform>P:/Projects/VML_QML</editform>
@@ -921,11 +921,11 @@ def my_form_open(dialog, layer, feature):
     <fieldstyles/>
   </conditionalstyles>
   <defaults>
-    <default field="fid" expression=""/>
+    <default field="Fid" expression=""/>
     <default field="featureID" expression=""/>
-    <default field="featureCode" expression=""/>
-    <default field="featureDescription" expression=""/>
+    <default field="FeatCode" expression=""/>
+    <default field="FeatDesc" expression=""/>
   </defaults>
-  <previewExpression>COALESCE( "featureDescription", '&lt;NULL>' )</previewExpression>
+  <previewExpression>COALESCE( "FeatDesc", '&lt;NULL>' )</previewExpression>
   <layerGeometryType>1</layerGeometryType>
 </qgis>
